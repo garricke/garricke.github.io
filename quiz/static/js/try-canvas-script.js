@@ -167,7 +167,7 @@ $(document).ready(function(){
 			textCtx.font = fontSize + "px " +fontFamily ;
 
 			//文字颜色设定
-			textCtx.fillStyle = "rgba)"
+			textCtx.fillStyle = "rgba("
 				+ params.red + "," 
 				+ params.green + ","
 				+ params.blue + ","
