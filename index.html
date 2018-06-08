@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前端实验室beta版-效果演示</title>
+	<link rel="stylesheet" type="text/css" href="quiz/static/css/blog-main-style.css">
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<div class="blog-index-head"></div>
+	<div class="blog-index-body">
+		<div class="blog-nav"></div>
+		<div class="blog-content-wrap">
+			<div class="blog-content">
+				<canvas class="canvas-content" id="canvasContent" width="600px" height="360px">
+					浏览器不支持canvas
+				</canvas>
+				<canvas class="canvas-content" id="canvasText" width="600px" height="360px">
+					浏览器不支持canvas
+				</canvas>
+				<div class="dashboard">
+					<div>
+						<input id="imageLoad" type="file" accept="image/*" />
+					</div>
+					<div>
+						<span>横向缩放倍数:</span><input type="text" class="scale-param" id="scaleParamHorizon">
+					</div>
+					<div>
+						<span>纵向缩放倍数:</span><input type="text" class="scale-param" id="scaleParamVertical">
+					</div>
+					<div>
+						<button class="scale-image" id="scaleImage">缩放图像</button>
+					</div>
+					<div>
+						<span>旋转角度：</span><input type="text" class="scale-param" id="rotateAngle">
+					</div>
+					<div>
+						<span>角度单位：</span>
+						<input type="radio" checked id="rotateDegree" name="rotateAngleParam">°</input>
+						<input type="radio" id="rotateRadius" name="rotateAngleParam">rad</input>
+					</div>
+					<div>
+						<button class="scale-image" id="rotateImage">旋转图像</button>
+					</div>
+					<div>
+						<span>目标文本：</span><input type="text" class="scale-param" id="objectText">
+					</div>
+					<div>
+						<span>目标字体：</span>
+						<select id="fontFamily" name="fontFamily">
+							<option value="Georgia">英文-Georgia</option>
+							<option value="Times New Roman">英文-Times New Roma</option>
+							<option value="SimSun">中文-宋体</option>
+							<option value="SimHei">中文-黑体</option>
+							<option value="KaiTi">中文-楷书</option>
+						</select>
+					</div>
+					<div>
+						<span>字体大小：</span><input type="text" class="scale-param" id="fontSize"><span>px</span>
+					</div>
+					<div>
+						<span>字体颜色：</span>
+						<span>R </span><input type="text" class="font-color-param">
+						<span>G </span><input type="text" class="font-color-param">
+						<span>B </span><input type="text" class="font-color-param">
+						<span>A </span><input type="text" class="font-color-param">
+					</div>
+					<div>
+						<span>颜色预览：</span>
+							<div class="canvas-color-previews" id="colorPreviews"></div>
+					</div>
+					<div>
+						<button class="scale-image" id="fillText">添加文字</button>
+					</div>
+				</div>
+				<img id="objPic" style="display: none" src="static/img/scale_test.png">
+			</div>
+		</div>
+	</div>
+	<div class="blog-index-foot"></div>
+	<script type="text/javascript" src="quiz/static/js/blog-main-script.js"></script>
+	<script type="text/javascript" src="quiz/static/js/try-canvas-script.js"></script>
+</body>
+</html>
