@@ -1,0 +1,163 @@
+/*
+ * 尕润同学的个人博客样式表，尽量兼容IE8 
+ */
+
+/*全局样式fork*/
+*{
+	margin: 0;
+	border:none;
+	padding:0;
+}
+html body{
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	border:none;
+	height:100%;
+	width:100%;
+}
+.blog-index-head{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:60px;
+	background-color:silver;
+}
+.blog-index-body{
+	position:relative;
+	width:100%;
+	top:60px;
+	left:0;
+	background-color:gray;
+}
+.blog-index-foot{
+	position:fixed;
+	width:100%;
+	bottom:0;
+}
+/*全局样式join*/
+
+/*页面中部fork*/
+.blog-index-body{
+	box-sizing:border-box;
+}
+.blog-content-wrap{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+}
+.blog-content{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+}
+.blog-expe-code{
+	position:absolute;
+	height:auto;
+	min-height:460px;
+	top:0;
+	width:40%;
+	background-color:green;
+	left:0;
+}
+.blog-expe-show{
+	position:absolute;
+	height:auto;
+	min-height:460px;
+	background-color:red;
+	top:0;
+	width:60%;
+	right:0;
+}
+.code-btn-wrap{
+	position:relative;
+	box-sizing: border-box;
+	top:0;
+	left:0;
+	width:100%;
+	height:32px;
+	text-align: right;
+	padding:4px 4px 0 0;
+}
+.code-previews{
+	height:24px;
+	padding:2px 4px 2px 4px;
+	border-radius: 4px;
+}
+.code-editor{
+	position:relative;
+	height:auto;
+	width:100%;
+	top:0;
+	left:0;
+	min-height:360px;
+	background-color: white;
+}
+.code-show{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+/*页面中部join*/
+
+/*canvas画布fork*/
+.canvas-content{
+	position:relative;
+/*	width:600px;
+	height:360px;*/
+}
+#canvasText{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.canvas-color-palette{
+	display:inline-block;
+	height:20px;
+	width:120px;
+	background: -webkit-linear-gradient(left,red, blue);
+	background: -moz-linear-gradient(left,red, blue);
+	background: -ms-linear-gradient(left,red, blue);
+	background: -o-linear-gradient(left,red, blue);
+	background: linear-gradient(left,red, blue);
+}
+.canvas-color-previews{
+	display:inline-block;
+	height:20px;
+	width:20px;
+	background-color:black;
+}
+.font-color-param{
+	width:24px;
+}
+/*canvas画布join*/
+
+/*操作面板fork*/
+.dashboard{
+	position:absolute;
+	height:100%;
+	/*width:120px;*/
+	top:0;
+	right:0;
+	padding:0 4px 0 0;
+}
+.scale-param{
+	position:relative;
+	width:64px;
+}
+.scale-image{
+	height:24px;
+	padding:2px 4px 2px 4px;
+}
+/*操作面板join*/
+
+
+
+
